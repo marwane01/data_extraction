@@ -70,41 +70,33 @@ async def consolidate_node(state: OverallState):
 def format_node(state: OverallState):
     bundle = state["master_bundle"]
 
-    # Final cleanup for identity
+    # Final Identity Check
     if not bundle.get("patient") or not bundle["patient"].get("name"):
         bundle["patient"] = {"name": "MAURIZIO FORLANELLI", "cf": "FRLMRZ56R25F704W"}
 
-    # Clinical blacklist for CSV
-    blacklist = [
-        "referto",
-        "conclusioni",
-        "si consiglia",
-        "operatore",
-        "firmato",
-        "cognome",
-        "nome",
-        "cf",
-    ]
-
+    # White-list only: If the value looks like therapy metadata, skip it.
     output = io.StringIO()
     writer = csv.DictWriter(output, fieldnames=["test_name", "value", "unit", "date"])
     writer.writeheader()
 
     for obs in bundle.get("observations", []):
-        name = str(obs.get("test_name", "")).lower()
-        # Only write if it's a real lab/finding and not a long text block
-        if (
-            not any(word in name for word in blacklist)
-            and len(str(obs.get("value", ""))) < 100
-        ):
-            writer.writerow(
-                {k: obs.get(k) for k in ["test_name", "value", "unit", "date"]}
-            )
+        name = str(obs.get("test_name", "")).upper()
+        val = str(obs.get("value", "")).upper()
 
-    return {
-        "final_json": json.dumps(bundle, indent=2, ensure_ascii=False),
-        "final_csv": output.getvalue(),
-    }
+        # LOGIC: If a test name is EXACTLY a medication name, it's a metadata artifact from the Excel.
+        med_names = [
+            m.get("medication", "").upper() for m in bundle.get("medications", [])
+        ]
+
+        if name in med_names:
+            continue
+        if len(val) > 150:  # Skip long paragraphs/referto blocks in the CSV
+            continue
+
+        writer.writerow({k: obs.get(k) for k in ["test_name", "value", "unit", "date"]})
+
+    final_json = json.dumps(bundle, indent=2, ensure_ascii=False)
+    return {"final_json": final_json, "final_csv": output.getvalue()}
 
 
 # --- BUILD GRAPH ---

@@ -5,20 +5,20 @@
   },
   "medications": [
     {
-      "medication": "Bisoprololo",
+      "medication": "Bisoprolol",
       "dosage": null
     },
     {
       "medication": "Pantoprazolo",
-      "dosage": "20 mg 1 cp ore 8"
+      "dosage": "20 mg once daily at 08:00"
     },
     {
-      "medication": "Cardioaspirina",
-      "dosage": null
+      "medication": "Aspirin",
+      "dosage": "100 mg once daily at 12:30"
     },
     {
-      "medication": "Cymbalta",
-      "dosage": "30 mg"
+      "medication": "Duloxetina",
+      "dosage": "30 mg once daily at 13:00"
     },
     {
       "medication": "Ezetimibe",
@@ -26,39 +26,35 @@
     },
     {
       "medication": "Tamsulosina",
-      "dosage": "0.4 mg 1 cp ore 20"
+      "dosage": "0.4 mg once daily at 20:00"
     },
     {
       "medication": "Bivis",
-      "dosage": "40/5 mg"
+      "dosage": "40 mg/10 mg once daily"
     },
     {
-      "medication": "Fluvastatina",
+      "medication": "Fluvastatin",
       "dosage": null
     },
     {
-      "medication": "Repatha",
-      "dosage": "140 mg 1 fl ogni 14 gg"
+      "medication": "Evolocumab",
+      "dosage": "140 mg subcutaneously every 14 days"
     },
     {
-      "medication": "Mirapexin",
-      "dosage": "1.05 mg 1 cp ore 20"
+      "medication": "Pramipexolo",
+      "dosage": "1.05 mg once daily at 20:00"
     },
     {
       "medication": "Rivaroxaban",
-      "dosage": "2.5 mg 1 cp ore 8 and 1 cp ore 20; 2.5 mg (annual)"
+      "dosage": "2.5 mg twice daily at 08:00 and 20:00"
     },
     {
-      "medication": "Jumex",
-      "dosage": "10 mg"
-    },
-    {
-      "medication": "Normix 200",
-      "dosage": "1 capsula mattina, pomeriggio e sera per 7 giorni al mese, da ripetere per 4 mesi"
+      "medication": "Rifaximin",
+      "dosage": "1 tablet three times daily for 7 days per month, repeat for 4 months"
     },
     {
       "medication": "Prolactis LT",
-      "dosage": "1 bustina al giorno per 7 giorni"
+      "dosage": "1 sachet daily for 7 days"
     },
     {
       "medication": "Midazolam",
@@ -70,135 +66,97 @@
     },
     {
       "medication": "Clensia",
-      "dosage": "prima confezione (8:00-20:00) due giorni prima; seconda confezione il giorno prima secondo istruzioni"
+      "dosage": "First pack for two days (8:00-20:00), second pack the day before according to instructions"
     },
     {
-      "medication": "Mirapexin RP",
-      "dosage": "0.26 mg 1 cp"
+      "medication": "Olmesartan/Amlodipine",
+      "dosage": "40 mg/10 mg once daily at 20:00"
     },
     {
-      "medication": "Mirapexin RP",
-      "dosage": "1.05 mg"
+      "medication": "Empagliflozin",
+      "dosage": "10 mg once daily at 08:00"
     },
     {
-      "medication": "Duloxetina",
-      "dosage": "30 mg 1 cp h 13"
+      "medication": "Allopurinol",
+      "dosage": null
     },
     {
-      "medication": "Repatha (Evolocumab)",
+      "medication": "Febuxostat",
+      "dosage": null
+    },
+    {
+      "medication": "Sildenafil",
+      "dosage": null
+    },
+    {
+      "medication": "Bempedoic acid",
+      "dosage": null
+    },
+    {
+      "medication": "Selegilina",
+      "dosage": "10 mg once daily at 08:00"
+    },
+    {
+      "medication": "Rosuvastatin",
+      "dosage": null
+    },
+    {
+      "medication": "Gemfibrozil",
+      "dosage": null
+    },
+    {
+      "medication": "ARMOLIPID PLUS",
+      "dosage": null
+    },
+    {
+      "medication": "REP +FLUV",
       "dosage": null
     },
     {
       "medication": "Oki",
       "dosage": null
-    },
-    {
-      "medication": "Levodopa",
-      "dosage": null
-    },
-    {
-      "medication": "Pramipexolo",
-      "dosage": null
-    },
-    {
-      "medication": "ASA",
-      "dosage": "100 mg 1 cp ore 12"
-    },
-    {
-      "medication": "olmesartan/amlodipina",
-      "dosage": "40/10 mg 1 cp h 20; 20/5 mg (reduced)"
-    },
-    {
-      "medication": "Selegilina",
-      "dosage": "10 mg 1 cp h 8"
-    },
-    {
-      "medication": "empaglifozin",
-      "dosage": "10 mg 1 cp h 8"
-    },
-    {
-      "medication": "allopurinolo",
-      "dosage": null
-    },
-    {
-      "medication": "febuxxostat",
-      "dosage": null
-    },
-    {
-      "medication": "sildenafil",
-      "dosage": null
-    },
-    {
-      "medication": "acido bempedoico",
-      "dosage": null
-    },
-    {
-      "medication": "Empagliflozin",
-      "dosage": "10mg, 1 c at 08:00"
-    },
-    {
-      "medication": "Rivaroxaban",
-      "dosage": "2.5mg, 1 c at 08:00"
-    },
-    {
-      "medication": "Selegilina",
-      "dosage": "10mg, 1 c at 08:00"
-    },
-    {
-      "medication": "Pantoprazolo Sodico Sesquiidrato",
-      "dosage": "20mg, 1 c at 08:00"
-    },
-    {
-      "medication": "Acido acetilsalicilico",
-      "dosage": "100mg, 1 c at 12:30"
-    },
-    {
-      "medication": "Duloxetina Cloridrato",
-      "dosage": "30mg, 1 c at 12:30"
-    },
-    {
-      "medication": "Medoxomil/Amlodipina",
-      "dosage": "40mg/10mg, 1 c at 19:30"
-    },
-    {
-      "medication": "Pramipexolo",
-      "dosage": "1.05mg, 1 c at 19:30"
-    },
-    {
-      "medication": "Tamsulosina cloridrato",
-      "dosage": "0.4mg, 1 c at 19:30"
-    },
-    {
-      "medication": "Rivaroxaban",
-      "dosage": "2.5mg, 1 c at 19:30"
-    },
-    {
-      "medication": "Evolocumab",
-      "dosage": "140mg, 1 injection every 2 weeks"
     }
   ],
   "observations": [
     {
-      "test_name": "ECD TSA",
-      "value": "ICA sn 55-60%, destra 50%",
+      "test_name": "ECD TSA ICA sinistra",
+      "value": "55-60",
+      "unit": "%",
+      "date": null
+    },
+    {
+      "test_name": "ECD TSA ICA destra",
+      "value": "50",
+      "unit": "%",
+      "date": null
+    },
+    {
+      "test_name": "Boston Score",
+      "value": "1 - 2 - 1",
       "unit": null,
       "date": null
     },
     {
-      "test_name": "Esame colonoscopico",
-      "value": "Limitato da presenza di feci liquide e solide; nessuna lesione mucosa grossolana evidenziata; procedura sospesa per ostruzione da feci solide, semi e fibre indigerite",
-      "unit": null,
-      "date": null
-    },
-    {
-      "test_name": "Preparazione intestinale",
-      "value": "Scarsa, esame incompleto",
+      "test_name": "Esame colonscopia",
+      "value": "Incomplete due to poor intestinal preparation",
       "unit": null,
       "date": null
     },
     {
       "test_name": "Deficit motorio del colon",
-      "value": "Presente",
+      "value": "present",
+      "unit": null,
+      "date": null
+    },
+    {
+      "test_name": "Presenza di feci liquide e solide",
+      "value": "present",
+      "unit": null,
+      "date": null
+    },
+    {
+      "test_name": "Procedura sospesa",
+      "value": "Suspended due to presence of solid, semi-solid and undigested fiber stools",
       "unit": null,
       "date": null
     },
@@ -420,13 +378,13 @@
     },
     {
       "test_name": "Leucociti (WBC)",
-      "value": "7,11",
+      "value": "7.11",
       "unit": "10^9/L",
       "date": "2025-11-04"
     },
     {
       "test_name": "Eritrociti (RBC)",
-      "value": "4,19",
+      "value": "4.19",
       "unit": "10^12/L",
       "date": "2025-11-04"
     },
@@ -438,13 +396,13 @@
     },
     {
       "test_name": "Ematocrito (HCT)",
-      "value": "40,6",
+      "value": "40.6",
       "unit": "%",
       "date": "2025-11-04"
     },
     {
       "test_name": "Volume corpuscolare medio (MCV)",
-      "value": "96,9",
+      "value": "96.9",
       "unit": "fL",
       "date": "2025-11-04"
     },
@@ -462,7 +420,7 @@
     },
     {
       "test_name": "Distribuzione Volume Eritrocitario (RDW)",
-      "value": "14,9",
+      "value": "14.9",
       "unit": "%",
       "date": "2025-11-04"
     },
@@ -474,67 +432,67 @@
     },
     {
       "test_name": "Volume Piastrinico Medio (MPV)",
-      "value": "11,1",
+      "value": "11.1",
       "unit": "fL",
       "date": "2025-11-04"
     },
     {
       "test_name": "Granulociti Neutrofili (percentuale)",
-      "value": "68,2",
+      "value": "68.2",
       "unit": "%",
       "date": "2025-11-04"
     },
     {
       "test_name": "Linfociti (percentuale)",
-      "value": "18,1",
+      "value": "18.1",
       "unit": "%",
       "date": "2025-11-04"
     },
     {
       "test_name": "Monociti (percentuale)",
-      "value": "9,1",
+      "value": "9.1",
       "unit": "%",
       "date": "2025-11-04"
     },
     {
       "test_name": "Granulociti Eosinofili (percentuale)",
-      "value": "3,9",
+      "value": "3.9",
       "unit": "%",
       "date": "2025-11-04"
     },
     {
       "test_name": "Granulociti Basofili (percentuale)",
-      "value": "0,7",
+      "value": "0.7",
       "unit": "%",
       "date": "2025-11-04"
     },
     {
       "test_name": "Granulociti Neutrofili (assoluto)",
-      "value": "4,84",
+      "value": "4.84",
       "unit": "10^9/L",
       "date": "2025-11-04"
     },
     {
       "test_name": "Linfociti (assoluto)",
-      "value": "1,29",
+      "value": "1.29",
       "unit": "10^9/L",
       "date": "2025-11-04"
     },
     {
       "test_name": "Monociti (assoluto)",
-      "value": "0,65",
+      "value": "0.65",
       "unit": "10^9/L",
       "date": "2025-11-04"
     },
     {
       "test_name": "Granulociti Eosinofili (assoluto)",
-      "value": "0,28",
+      "value": "0.28",
       "unit": "10^9/L",
       "date": "2025-11-04"
     },
     {
       "test_name": "Granulociti Basofili (assoluto)",
-      "value": "0,05",
+      "value": "0.05",
       "unit": "10^9/L",
       "date": "2025-11-04"
     },
@@ -552,7 +510,7 @@
     },
     {
       "test_name": "Creatininemia (mg/dL)",
-      "value": "2,12",
+      "value": "2.12",
       "unit": "mg/dL",
       "date": "2025-11-04"
     },
@@ -565,7 +523,7 @@
     {
       "test_name": "Stima del filtrato glomerulare (eGFR)",
       "value": "31",
-      "unit": "mL/min/1,73m2",
+      "unit": "mL/min/1.73m2",
       "date": "2025-11-04"
     },
     {
@@ -582,7 +540,7 @@
     },
     {
       "test_name": "Acido urico (Uricemia)",
-      "value": "9,7",
+      "value": "9.7",
       "unit": "mg/dL",
       "date": "2025-11-04"
     },
@@ -618,7 +576,7 @@
     },
     {
       "test_name": "Potassio",
-      "value": "4,6",
+      "value": "4.6",
       "unit": "mmol/L",
       "date": "2025-11-04"
     },
@@ -630,13 +588,13 @@
     },
     {
       "test_name": "Calcio",
-      "value": "9,4",
+      "value": "9.4",
       "unit": "mg/dL",
       "date": "2025-11-04"
     },
     {
       "test_name": "Tireotropina (TSH 3° Generazione) Riflesso",
-      "value": "2,73",
+      "value": "2.73",
       "unit": "mUI/L",
       "date": "2025-11-04"
     },
@@ -648,13 +606,13 @@
     },
     {
       "test_name": "Ormone follicolo-stimolante (FSH)",
-      "value": "4,0",
+      "value": "4.0",
       "unit": "UI/L",
       "date": "2025-11-04"
     },
     {
       "test_name": "Ormone luteinizzante (LH)",
-      "value": "3,5",
+      "value": "3.5",
       "unit": "UI/L",
       "date": "2025-11-04"
     },
@@ -666,92 +624,26 @@
     },
     {
       "test_name": "Testosterone libero",
-      "value": "8,0",
+      "value": "8.0",
       "unit": "ng/L",
       "date": "2025-11-04"
     },
     {
       "test_name": "Testosterone plasmatico (µg/L)",
-      "value": "1,1",
+      "value": "1.1",
       "unit": "µg/L",
       "date": "2025-11-04"
     },
     {
       "test_name": "Testosterone plasmatico (nmol/L)",
-      "value": "3,8",
+      "value": "3.8",
       "unit": "nmol/L",
       "date": "2025-11-04"
-    },
-    {
-      "test_name": "JARDIANCE",
-      "value": "10",
-      "unit": "mg",
-      "date": "2025-11-20"
-    },
-    {
-      "test_name": "RIVAROXABAN",
-      "value": "2.5",
-      "unit": "mg",
-      "date": "2025-02-06"
-    },
-    {
-      "test_name": "JUMEX",
-      "value": "10",
-      "unit": "mg",
-      "date": "2023-01-10"
-    },
-    {
-      "test_name": "PANTOPRAZOLO",
-      "value": "20",
-      "unit": "mg",
-      "date": "2014-10-05"
-    },
-    {
-      "test_name": "CARDIOASPIRIN",
-      "value": "100",
-      "unit": "mg",
-      "date": "2008-02-12"
-    },
-    {
-      "test_name": "ALIKRES",
-      "value": "30",
-      "unit": "mg",
-      "date": "2012-12-01"
-    },
-    {
-      "test_name": "BIVIS",
-      "value": "40/10",
-      "unit": "mg",
-      "date": "2024-11-14"
-    },
-    {
-      "test_name": "MIRAPEXIN",
-      "value": "1.05",
-      "unit": "mg",
-      "date": "2023-01-10"
-    },
-    {
-      "test_name": "TAMSULOSIN",
-      "value": "0.4",
-      "unit": "mg",
-      "date": "2012-10-25"
-    },
-    {
-      "test_name": "RIVAROXABAN",
-      "value": "2.5",
-      "unit": "mg",
-      "date": "2025-02-06"
-    },
-    {
-      "test_name": "REPATHA",
-      "value": "140",
-      "unit": "mg",
-      "date": "2022-07-21"
     }
   ],
   "conditions": [
     {
-      "code": "MALATTIA DI PARKINSON",
+      "code": "Parkinson's Disease",
       "onset_date": null
     },
     {
@@ -793,90 +685,6 @@
     {
       "code": "Insufficienza renale cronica (CKD) - Stadio 3B",
       "onset_date": null
-    },
-    {
-      "code": "Parkinson",
-      "onset_date": "2023"
-    },
-    {
-      "code": "Ernia lombare",
-      "onset_date": null
-    },
-    {
-      "code": "Insufficienza renale cronica (IRC)",
-      "onset_date": null
-    },
-    {
-      "code": "Ipertensione arteriosa",
-      "onset_date": null
-    },
-    {
-      "code": "Sindrome coronarica cronica",
-      "onset_date": "2014"
-    },
-    {
-      "code": "Coronaropatia trivasale",
-      "onset_date": "2014"
-    },
-    {
-      "code": "Polivasculopatia",
-      "onset_date": null
-    },
-    {
-      "code": "Stenosi carotidea",
-      "onset_date": null
-    },
-    {
-      "code": "By-pass aorto bi-femorale",
-      "onset_date": null
-    },
-    {
-      "code": "DE",
-      "onset_date": null
-    },
-    {
-      "code": "JARDIANCE 10mg - 28cpr (1 c, 8.00)",
-      "onset_date": "2025-11-20"
-    },
-    {
-      "code": "RIVAROXABAN 2,5mg - 56cpr (1 c, 8.00)",
-      "onset_date": "2025-02-06"
-    },
-    {
-      "code": "JUMEX 10mg - 25cpr (1c, 8.00)",
-      "onset_date": "2023-01-10"
-    },
-    {
-      "code": "PANTOPRAZOLO 20mg - 28cpr (1 c, 8.00)",
-      "onset_date": "2014-10-05"
-    },
-    {
-      "code": "CARDIOASPIRIN 100mg - 30cpr GAST (1 c, 12.30)",
-      "onset_date": "2008-02-12"
-    },
-    {
-      "code": "ALIKRES 30mg GASTROR - 30cpr (1 c, 12.30)",
-      "onset_date": "2012-12-01"
-    },
-    {
-      "code": "BIVIS 40mg/10mg - 28cpr riv (1 c, 19.30)",
-      "onset_date": "2024-11-14"
-    },
-    {
-      "code": "MIRAPEXIN 1,05mg - 30cpr (1 c, 19.30)",
-      "onset_date": "2023-01-10"
-    },
-    {
-      "code": "TAMSULOSIN TEVA 0,4mg - 30cpr (1 c, 19.30)",
-      "onset_date": "2012-10-25"
-    },
-    {
-      "code": "RIVAROXABAN 2,5mg - 56cpr (1 c, 19.30)",
-      "onset_date": "2025-02-06"
-    },
-    {
-      "code": "REPATHA 140mg - iniezione (1, every 2 weeks)",
-      "onset_date": "2022-07-21"
     },
     {
       "code": "Ipercolesterolemia",
