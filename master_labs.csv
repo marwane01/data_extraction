@@ -1,0 +1,95 @@
+test_name,value,unit,date
+ECD TSA,"ICA sn 55-60%, destra 50%",,
+Preparazione intestinale,"Scarsa, esame incompleto",,
+Deficit motorio del colon,Presente,,
+Tremor (right upper limb),present,,2022-01-01
+Kyphosis,present,,2022-01-01
+Pendular gait (right),reduced,,2022-01-01
+SPET DAT scan,reduced tracer uptake in both striata,,2022-11-01
+Brain MRI,normal,,2022-11-01
+Microangiopathic changes,present,,2022-11-01
+Rest tremor (right side),present,,2023-06-01
+Bradykinesia (right),mild,,2023-06-01
+Hypertonia (right upper limb),mild,,2023-06-01
+Kyphosis,mild,,2023-06-01
+Pendular gait (right),reduced,,2023-06-01
+Postural transitions,rapid,,2023-06-01
+Gait step length,long,,2023-06-01
+Gait symmetry,symmetrical,,2023-06-01
+Pull test,compensated,,2023-06-01
+UPDRS part III,9,,2023-06-01
+Sleep duration,6 hours,,2025-09-24
+REM sleep behavior disorder (RBD),present,,2025-09-24
+Vivid dreams,present,,2025-09-24
+Hypertonia (overall),absent,,2025-09-24
+Mobility,very mobile,,2025-09-24
+Gait (overall),"valid, elastic, symmetrical",,2025-09-24
+Pendular gait (right),reduced,,2025-09-24
+Tremor (re-emergent during walking),present,,2025-09-24
+UPDRS part III,5,,2025-09-24
+Cruralgia,present after exertion,,2025-09-24
+Lumbago,absent,,2025-09-24
+Hernia,present,,2025-09-24
+Ankle edema,present,,2025-09-24
+Stool consistency,tendentially diarrheal,,2025-09-24
+Tremor (morning),slightly increased,,2025-09-24
+"Tremor (re-emergent during walking, right hand)",present,,2025-09-24
+Impairment of right hand movements,moderate,,2025-09-24
+Gait step length,long,,2025-09-24
+Gait symmetry,symmetrical,,2025-09-24
+Gait regularity,regular,,2025-09-24
+Leucociti (WBC),"7,11",10^9/L,2025-11-04
+Eritrociti (RBC),"4,19",10^12/L,2025-11-04
+Emoglobina (HBG),123,g/L,2025-11-04
+Ematocrito (HCT),"40,6",%,2025-11-04
+Volume corpuscolare medio (MCV),"96,9",fL,2025-11-04
+Contenuto Medio Hgb (MCH),29,pg,2025-11-04
+Concentrazione Media Hgb (MCHC),303,g/L,2025-11-04
+Distribuzione Volume Eritrocitario (RDW),"14,9",%,2025-11-04
+Piastrine (PLT),148,10^9/L,2025-11-04
+Volume Piastrinico Medio (MPV),"11,1",fL,2025-11-04
+Granulociti Neutrofili (percentuale),"68,2",%,2025-11-04
+Linfociti (percentuale),"18,1",%,2025-11-04
+Monociti (percentuale),"9,1",%,2025-11-04
+Granulociti Eosinofili (percentuale),"3,9",%,2025-11-04
+Granulociti Basofili (percentuale),"0,7",%,2025-11-04
+Granulociti Neutrofili (assoluto),"4,84",10^9/L,2025-11-04
+Linfociti (assoluto),"1,29",10^9/L,2025-11-04
+Monociti (assoluto),"0,65",10^9/L,2025-11-04
+Granulociti Eosinofili (assoluto),"0,28",10^9/L,2025-11-04
+Granulociti Basofili (assoluto),"0,05",10^9/L,2025-11-04
+Glucosio,92,mg/dL,2025-11-04
+Urea (Azotemia),81,mg/dL,2025-11-04
+Creatininemia (mg/dL),"2,12",mg/dL,2025-11-04
+Creatininemia (µmol/L),187,µmol/L,2025-11-04
+Stima del filtrato glomerulare (eGFR),31,"mL/min/1,73m2",2025-11-04
+Aspartato aminotransferasi (AST),28,U/L,2025-11-04
+Alanina aminotransferasi (ALT),21,U/L,2025-11-04
+Acido urico (Uricemia),"9,7",mg/dL,2025-11-04
+Colesterolo totale,129,mg/dL,2025-11-04
+Colesterolo HDL,38,mg/dL,2025-11-04
+Colesterolo LDL,60,mg/dL,2025-11-04
+Trigliceridi,154,mg/dL,2025-11-04
+Sodio,143,mmol/L,2025-11-04
+Potassio,"4,6",mmol/L,2025-11-04
+Cloruri,111,mmol/L,2025-11-04
+Calcio,"9,4",mg/dL,2025-11-04
+Tireotropina (TSH 3° Generazione) Riflesso,"2,73",mUI/L,2025-11-04
+Bicarbonati,22,mmol/L,2025-11-04
+Ormone follicolo-stimolante (FSH),"4,0",UI/L,2025-11-04
+Ormone luteinizzante (LH),"3,5",UI/L,2025-11-04
+Prolattina,< 0.82,µg/L,2025-11-04
+Testosterone libero,"8,0",ng/L,2025-11-04
+Testosterone plasmatico (µg/L),"1,1",µg/L,2025-11-04
+Testosterone plasmatico (nmol/L),"3,8",nmol/L,2025-11-04
+JARDIANCE,10,mg,2025-11-20
+RIVAROXABAN,2.5,mg,2025-02-06
+JUMEX,10,mg,2023-01-10
+PANTOPRAZOLO,20,mg,2014-10-05
+CARDIOASPIRIN,100,mg,2008-02-12
+ALIKRES,30,mg,2012-12-01
+BIVIS,40/10,mg,2024-11-14
+MIRAPEXIN,1.05,mg,2023-01-10
+TAMSULOSIN,0.4,mg,2012-10-25
+RIVAROXABAN,2.5,mg,2025-02-06
+REPATHA,140,mg,2022-07-21

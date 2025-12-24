@@ -1,0 +1,890 @@
+{
+  "patient": {
+    "name": "MAURIZIO FORLANELLI",
+    "cf": "FRLMRZ56R25F704W"
+  },
+  "medications": [
+    {
+      "medication": "Bisoprololo",
+      "dosage": null
+    },
+    {
+      "medication": "Pantoprazolo",
+      "dosage": "20 mg 1 cp ore 8"
+    },
+    {
+      "medication": "Cardioaspirina",
+      "dosage": null
+    },
+    {
+      "medication": "Cymbalta",
+      "dosage": "30 mg"
+    },
+    {
+      "medication": "Ezetimibe",
+      "dosage": null
+    },
+    {
+      "medication": "Tamsulosina",
+      "dosage": "0.4 mg 1 cp ore 20"
+    },
+    {
+      "medication": "Bivis",
+      "dosage": "40/5 mg"
+    },
+    {
+      "medication": "Fluvastatina",
+      "dosage": null
+    },
+    {
+      "medication": "Repatha",
+      "dosage": "140 mg 1 fl ogni 14 gg"
+    },
+    {
+      "medication": "Mirapexin",
+      "dosage": "1.05 mg 1 cp ore 20"
+    },
+    {
+      "medication": "Rivaroxaban",
+      "dosage": "2.5 mg 1 cp ore 8 and 1 cp ore 20; 2.5 mg (annual)"
+    },
+    {
+      "medication": "Jumex",
+      "dosage": "10 mg"
+    },
+    {
+      "medication": "Normix 200",
+      "dosage": "1 capsula mattina, pomeriggio e sera per 7 giorni al mese, da ripetere per 4 mesi"
+    },
+    {
+      "medication": "Prolactis LT",
+      "dosage": "1 bustina al giorno per 7 giorni"
+    },
+    {
+      "medication": "Midazolam",
+      "dosage": "4 mg"
+    },
+    {
+      "medication": "Petidina",
+      "dosage": "40 mg"
+    },
+    {
+      "medication": "Clensia",
+      "dosage": "prima confezione (8:00-20:00) due giorni prima; seconda confezione il giorno prima secondo istruzioni"
+    },
+    {
+      "medication": "Mirapexin RP",
+      "dosage": "0.26 mg 1 cp"
+    },
+    {
+      "medication": "Mirapexin RP",
+      "dosage": "1.05 mg"
+    },
+    {
+      "medication": "Duloxetina",
+      "dosage": "30 mg 1 cp h 13"
+    },
+    {
+      "medication": "Repatha (Evolocumab)",
+      "dosage": null
+    },
+    {
+      "medication": "Oki",
+      "dosage": null
+    },
+    {
+      "medication": "Levodopa",
+      "dosage": null
+    },
+    {
+      "medication": "Pramipexolo",
+      "dosage": null
+    },
+    {
+      "medication": "ASA",
+      "dosage": "100 mg 1 cp ore 12"
+    },
+    {
+      "medication": "olmesartan/amlodipina",
+      "dosage": "40/10 mg 1 cp h 20; 20/5 mg (reduced)"
+    },
+    {
+      "medication": "Selegilina",
+      "dosage": "10 mg 1 cp h 8"
+    },
+    {
+      "medication": "empaglifozin",
+      "dosage": "10 mg 1 cp h 8"
+    },
+    {
+      "medication": "allopurinolo",
+      "dosage": null
+    },
+    {
+      "medication": "febuxxostat",
+      "dosage": null
+    },
+    {
+      "medication": "sildenafil",
+      "dosage": null
+    },
+    {
+      "medication": "acido bempedoico",
+      "dosage": null
+    },
+    {
+      "medication": "Empagliflozin",
+      "dosage": "10mg, 1 c at 08:00"
+    },
+    {
+      "medication": "Rivaroxaban",
+      "dosage": "2.5mg, 1 c at 08:00"
+    },
+    {
+      "medication": "Selegilina",
+      "dosage": "10mg, 1 c at 08:00"
+    },
+    {
+      "medication": "Pantoprazolo Sodico Sesquiidrato",
+      "dosage": "20mg, 1 c at 08:00"
+    },
+    {
+      "medication": "Acido acetilsalicilico",
+      "dosage": "100mg, 1 c at 12:30"
+    },
+    {
+      "medication": "Duloxetina Cloridrato",
+      "dosage": "30mg, 1 c at 12:30"
+    },
+    {
+      "medication": "Medoxomil/Amlodipina",
+      "dosage": "40mg/10mg, 1 c at 19:30"
+    },
+    {
+      "medication": "Pramipexolo",
+      "dosage": "1.05mg, 1 c at 19:30"
+    },
+    {
+      "medication": "Tamsulosina cloridrato",
+      "dosage": "0.4mg, 1 c at 19:30"
+    },
+    {
+      "medication": "Rivaroxaban",
+      "dosage": "2.5mg, 1 c at 19:30"
+    },
+    {
+      "medication": "Evolocumab",
+      "dosage": "140mg, 1 injection every 2 weeks"
+    }
+  ],
+  "observations": [
+    {
+      "test_name": "ECD TSA",
+      "value": "ICA sn 55-60%, destra 50%",
+      "unit": null,
+      "date": null
+    },
+    {
+      "test_name": "Esame colonoscopico",
+      "value": "Limitato da presenza di feci liquide e solide; nessuna lesione mucosa grossolana evidenziata; procedura sospesa per ostruzione da feci solide, semi e fibre indigerite",
+      "unit": null,
+      "date": null
+    },
+    {
+      "test_name": "Preparazione intestinale",
+      "value": "Scarsa, esame incompleto",
+      "unit": null,
+      "date": null
+    },
+    {
+      "test_name": "Deficit motorio del colon",
+      "value": "Presente",
+      "unit": null,
+      "date": null
+    },
+    {
+      "test_name": "Tremor (right upper limb)",
+      "value": "present",
+      "unit": null,
+      "date": "2022-01-01"
+    },
+    {
+      "test_name": "Kyphosis",
+      "value": "present",
+      "unit": null,
+      "date": "2022-01-01"
+    },
+    {
+      "test_name": "Pendular gait (right)",
+      "value": "reduced",
+      "unit": null,
+      "date": "2022-01-01"
+    },
+    {
+      "test_name": "SPET DAT scan",
+      "value": "reduced tracer uptake in both striata",
+      "unit": null,
+      "date": "2022-11-01"
+    },
+    {
+      "test_name": "Brain MRI",
+      "value": "normal",
+      "unit": null,
+      "date": "2022-11-01"
+    },
+    {
+      "test_name": "Microangiopathic changes",
+      "value": "present",
+      "unit": null,
+      "date": "2022-11-01"
+    },
+    {
+      "test_name": "Rest tremor (right side)",
+      "value": "present",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Bradykinesia (right)",
+      "value": "mild",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Hypertonia (right upper limb)",
+      "value": "mild",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Kyphosis",
+      "value": "mild",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Pendular gait (right)",
+      "value": "reduced",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Postural transitions",
+      "value": "rapid",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Gait step length",
+      "value": "long",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Gait symmetry",
+      "value": "symmetrical",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Pull test",
+      "value": "compensated",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "UPDRS part III",
+      "value": "9",
+      "unit": null,
+      "date": "2023-06-01"
+    },
+    {
+      "test_name": "Sleep duration",
+      "value": "6 hours",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "REM sleep behavior disorder (RBD)",
+      "value": "present",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Vivid dreams",
+      "value": "present",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Hypertonia (overall)",
+      "value": "absent",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Mobility",
+      "value": "very mobile",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Gait (overall)",
+      "value": "valid, elastic, symmetrical",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Pendular gait (right)",
+      "value": "reduced",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Tremor (re-emergent during walking)",
+      "value": "present",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "UPDRS part III",
+      "value": "5",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Cruralgia",
+      "value": "present after exertion",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Lumbago",
+      "value": "absent",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Hernia",
+      "value": "present",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Ankle edema",
+      "value": "present",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Stool consistency",
+      "value": "tendentially diarrheal",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Tremor (morning)",
+      "value": "slightly increased",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Tremor (re-emergent during walking, right hand)",
+      "value": "present",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Impairment of right hand movements",
+      "value": "moderate",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Gait step length",
+      "value": "long",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Gait symmetry",
+      "value": "symmetrical",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Gait regularity",
+      "value": "regular",
+      "unit": null,
+      "date": "2025-09-24"
+    },
+    {
+      "test_name": "Leucociti (WBC)",
+      "value": "7,11",
+      "unit": "10^9/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Eritrociti (RBC)",
+      "value": "4,19",
+      "unit": "10^12/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Emoglobina (HBG)",
+      "value": "123",
+      "unit": "g/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Ematocrito (HCT)",
+      "value": "40,6",
+      "unit": "%",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Volume corpuscolare medio (MCV)",
+      "value": "96,9",
+      "unit": "fL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Contenuto Medio Hgb (MCH)",
+      "value": "29",
+      "unit": "pg",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Concentrazione Media Hgb (MCHC)",
+      "value": "303",
+      "unit": "g/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Distribuzione Volume Eritrocitario (RDW)",
+      "value": "14,9",
+      "unit": "%",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Piastrine (PLT)",
+      "value": "148",
+      "unit": "10^9/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Volume Piastrinico Medio (MPV)",
+      "value": "11,1",
+      "unit": "fL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Granulociti Neutrofili (percentuale)",
+      "value": "68,2",
+      "unit": "%",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Linfociti (percentuale)",
+      "value": "18,1",
+      "unit": "%",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Monociti (percentuale)",
+      "value": "9,1",
+      "unit": "%",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Granulociti Eosinofili (percentuale)",
+      "value": "3,9",
+      "unit": "%",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Granulociti Basofili (percentuale)",
+      "value": "0,7",
+      "unit": "%",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Granulociti Neutrofili (assoluto)",
+      "value": "4,84",
+      "unit": "10^9/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Linfociti (assoluto)",
+      "value": "1,29",
+      "unit": "10^9/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Monociti (assoluto)",
+      "value": "0,65",
+      "unit": "10^9/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Granulociti Eosinofili (assoluto)",
+      "value": "0,28",
+      "unit": "10^9/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Granulociti Basofili (assoluto)",
+      "value": "0,05",
+      "unit": "10^9/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Glucosio",
+      "value": "92",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Urea (Azotemia)",
+      "value": "81",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Creatininemia (mg/dL)",
+      "value": "2,12",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Creatininemia (µmol/L)",
+      "value": "187",
+      "unit": "µmol/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Stima del filtrato glomerulare (eGFR)",
+      "value": "31",
+      "unit": "mL/min/1,73m2",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Aspartato aminotransferasi (AST)",
+      "value": "28",
+      "unit": "U/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Alanina aminotransferasi (ALT)",
+      "value": "21",
+      "unit": "U/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Acido urico (Uricemia)",
+      "value": "9,7",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Colesterolo totale",
+      "value": "129",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Colesterolo HDL",
+      "value": "38",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Colesterolo LDL",
+      "value": "60",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Trigliceridi",
+      "value": "154",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Sodio",
+      "value": "143",
+      "unit": "mmol/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Potassio",
+      "value": "4,6",
+      "unit": "mmol/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Cloruri",
+      "value": "111",
+      "unit": "mmol/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Calcio",
+      "value": "9,4",
+      "unit": "mg/dL",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Tireotropina (TSH 3° Generazione) Riflesso",
+      "value": "2,73",
+      "unit": "mUI/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Bicarbonati",
+      "value": "22",
+      "unit": "mmol/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Ormone follicolo-stimolante (FSH)",
+      "value": "4,0",
+      "unit": "UI/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Ormone luteinizzante (LH)",
+      "value": "3,5",
+      "unit": "UI/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Prolattina",
+      "value": "< 0.82",
+      "unit": "µg/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Testosterone libero",
+      "value": "8,0",
+      "unit": "ng/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Testosterone plasmatico (µg/L)",
+      "value": "1,1",
+      "unit": "µg/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "Testosterone plasmatico (nmol/L)",
+      "value": "3,8",
+      "unit": "nmol/L",
+      "date": "2025-11-04"
+    },
+    {
+      "test_name": "JARDIANCE",
+      "value": "10",
+      "unit": "mg",
+      "date": "2025-11-20"
+    },
+    {
+      "test_name": "RIVAROXABAN",
+      "value": "2.5",
+      "unit": "mg",
+      "date": "2025-02-06"
+    },
+    {
+      "test_name": "JUMEX",
+      "value": "10",
+      "unit": "mg",
+      "date": "2023-01-10"
+    },
+    {
+      "test_name": "PANTOPRAZOLO",
+      "value": "20",
+      "unit": "mg",
+      "date": "2014-10-05"
+    },
+    {
+      "test_name": "CARDIOASPIRIN",
+      "value": "100",
+      "unit": "mg",
+      "date": "2008-02-12"
+    },
+    {
+      "test_name": "ALIKRES",
+      "value": "30",
+      "unit": "mg",
+      "date": "2012-12-01"
+    },
+    {
+      "test_name": "BIVIS",
+      "value": "40/10",
+      "unit": "mg",
+      "date": "2024-11-14"
+    },
+    {
+      "test_name": "MIRAPEXIN",
+      "value": "1.05",
+      "unit": "mg",
+      "date": "2023-01-10"
+    },
+    {
+      "test_name": "TAMSULOSIN",
+      "value": "0.4",
+      "unit": "mg",
+      "date": "2012-10-25"
+    },
+    {
+      "test_name": "RIVAROXABAN",
+      "value": "2.5",
+      "unit": "mg",
+      "date": "2025-02-06"
+    },
+    {
+      "test_name": "REPATHA",
+      "value": "140",
+      "unit": "mg",
+      "date": "2022-07-21"
+    }
+  ],
+  "conditions": [
+    {
+      "code": "MALATTIA DI PARKINSON",
+      "onset_date": null
+    },
+    {
+      "code": "Cardiopatia ipertensiva",
+      "onset_date": "2010"
+    },
+    {
+      "code": "Triplice bypass",
+      "onset_date": "2014"
+    },
+    {
+      "code": "Aneurismectomia aorta addominale",
+      "onset_date": "2017"
+    },
+    {
+      "code": "Dislipidemia",
+      "onset_date": null
+    },
+    {
+      "code": "Disturbo del comportamento del sonno REM (RBD)",
+      "onset_date": null
+    },
+    {
+      "code": "Cruralgia",
+      "onset_date": null
+    },
+    {
+      "code": "Edema alle caviglie",
+      "onset_date": null
+    },
+    {
+      "code": "Alvo diarroico",
+      "onset_date": null
+    },
+    {
+      "code": "Ernia",
+      "onset_date": null
+    },
+    {
+      "code": "Insufficienza renale cronica (CKD) - Stadio 3B",
+      "onset_date": null
+    },
+    {
+      "code": "Parkinson",
+      "onset_date": "2023"
+    },
+    {
+      "code": "Ernia lombare",
+      "onset_date": null
+    },
+    {
+      "code": "Insufficienza renale cronica (IRC)",
+      "onset_date": null
+    },
+    {
+      "code": "Ipertensione arteriosa",
+      "onset_date": null
+    },
+    {
+      "code": "Sindrome coronarica cronica",
+      "onset_date": "2014"
+    },
+    {
+      "code": "Coronaropatia trivasale",
+      "onset_date": "2014"
+    },
+    {
+      "code": "Polivasculopatia",
+      "onset_date": null
+    },
+    {
+      "code": "Stenosi carotidea",
+      "onset_date": null
+    },
+    {
+      "code": "By-pass aorto bi-femorale",
+      "onset_date": null
+    },
+    {
+      "code": "DE",
+      "onset_date": null
+    },
+    {
+      "code": "JARDIANCE 10mg - 28cpr (1 c, 8.00)",
+      "onset_date": "2025-11-20"
+    },
+    {
+      "code": "RIVAROXABAN 2,5mg - 56cpr (1 c, 8.00)",
+      "onset_date": "2025-02-06"
+    },
+    {
+      "code": "JUMEX 10mg - 25cpr (1c, 8.00)",
+      "onset_date": "2023-01-10"
+    },
+    {
+      "code": "PANTOPRAZOLO 20mg - 28cpr (1 c, 8.00)",
+      "onset_date": "2014-10-05"
+    },
+    {
+      "code": "CARDIOASPIRIN 100mg - 30cpr GAST (1 c, 12.30)",
+      "onset_date": "2008-02-12"
+    },
+    {
+      "code": "ALIKRES 30mg GASTROR - 30cpr (1 c, 12.30)",
+      "onset_date": "2012-12-01"
+    },
+    {
+      "code": "BIVIS 40mg/10mg - 28cpr riv (1 c, 19.30)",
+      "onset_date": "2024-11-14"
+    },
+    {
+      "code": "MIRAPEXIN 1,05mg - 30cpr (1 c, 19.30)",
+      "onset_date": "2023-01-10"
+    },
+    {
+      "code": "TAMSULOSIN TEVA 0,4mg - 30cpr (1 c, 19.30)",
+      "onset_date": "2012-10-25"
+    },
+    {
+      "code": "RIVAROXABAN 2,5mg - 56cpr (1 c, 19.30)",
+      "onset_date": "2025-02-06"
+    },
+    {
+      "code": "REPATHA 140mg - iniezione (1, every 2 weeks)",
+      "onset_date": "2022-07-21"
+    },
+    {
+      "code": "Ipercolesterolemia",
+      "onset_date": null
+    },
+    {
+      "code": "Ipertrigliceridemia",
+      "onset_date": null
+    }
+  ]
+}
