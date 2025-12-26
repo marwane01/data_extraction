@@ -6,8 +6,6 @@ from src.nodes.parser import parse_medical_file
 from src.nodes.extractor import extract_section_worker, final_trustcall_merger
 from src.nodes.refiner import refine_data_node
 
-# --- EDGES ---
-
 
 def file_mapper_edge(state: OverallState):
     """Fan-out to one node per file."""
@@ -51,9 +49,6 @@ async def parse_and_map_sections(state: dict):
     ]
 
 
-# --- NODES ---
-
-
 async def extract_section_node(state: SectionInput):
     result = await extract_section_worker(
         state["section_type"], state["content"], state["file_name"]
@@ -83,7 +78,6 @@ def format_node(state: OverallState):
         name = str(obs.get("test_name", "")).upper()
         val = str(obs.get("value", "")).upper()
 
-        # LOGIC: If a test name is EXACTLY a medication name, it's a metadata artifact from the Excel.
         med_names = [
             m.get("medication", "").upper() for m in bundle.get("medications", [])
         ]

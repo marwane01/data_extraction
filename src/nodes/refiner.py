@@ -1,4 +1,3 @@
-# src/nodes/refiner.py
 import json
 from src.utils.llm import get_llm
 from src.schemas import FHIRBundle
@@ -10,7 +9,7 @@ async def refine_data_node(state: dict):
     if not master or not any(master.values()):
         return {"master_bundle": master}
 
-    print("🧪 [REFINER] Performing Semantic Entity Resolution...")
+    print("[REFINER] Performing Semantic Entity Resolution...")
 
     prompt = f"""
     You are a Clinical Data Architect. Your goal is to transform this fragmented FHIR Bundle into a high-fidelity record.
@@ -42,5 +41,5 @@ async def refine_data_node(state: dict):
             return {"master_bundle": refined.model_dump()}
         return {"master_bundle": master}
     except Exception as e:
-        print(f"⚠️ [REFINER ERROR]: {e}")
+        print(f"[REFINER ERROR]: {e}")
         return {"master_bundle": master}

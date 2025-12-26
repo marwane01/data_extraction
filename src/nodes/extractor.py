@@ -70,7 +70,7 @@ async def extract_section_worker(
         }
     except Exception as e:
         # This catches the 'NoneType' error you saw
-        print(f"⚠️ [EXTRACTOR ERROR] {section_type} in {file_name}: {e}")
+        print(f"[EXTRACTOR ERROR] {section_type} in {file_name}: {e}")
         return {section_type: [], "patient": None}
 
 
@@ -106,7 +106,7 @@ async def final_trustcall_merger(fragments: list):
             if res.get("responses"):
                 master_dict = res["responses"][0].model_dump()
         except Exception as e:
-            print(f"⚠️ [MERGER ERROR]: {e}")
+            print(f"[MERGER ERROR]: {e}")
             continue
 
     return FHIRBundle(**master_dict) if master_dict else FHIRBundle()
