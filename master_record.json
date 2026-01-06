@@ -1,0 +1,715 @@
+{
+  "patient": {
+    "name": "FORLANELLI MAURIZIO",
+    "cf": null
+  },
+  "medications": [
+    {
+      "medication": "Jumex",
+      "dosage": "10 mg",
+      "timing": "08:00",
+      "status": "active"
+    },
+    {
+      "medication": "Pantoprazolo",
+      "dosage": "20 mg",
+      "timing": "08:00",
+      "status": "active"
+    },
+    {
+      "medication": "Rivaroxaban",
+      "dosage": null,
+      "timing": "08:00, 19:30",
+      "status": "active"
+    },
+    {
+      "medication": "Cardiospirin",
+      "dosage": null,
+      "timing": "12:30",
+      "status": "active"
+    },
+    {
+      "medication": "Duloxetina",
+      "dosage": "30 mg",
+      "timing": "12:30",
+      "status": "active"
+    },
+    {
+      "medication": "Tamsulosina",
+      "dosage": "0.4 mg",
+      "timing": "19:30",
+      "status": "active"
+    },
+    {
+      "medication": "Bivis",
+      "dosage": "40/5 mg",
+      "timing": "19:30",
+      "status": "active"
+    },
+    {
+      "medication": "Mirapexin RP",
+      "dosage": "1.05 mg",
+      "timing": "19:30",
+      "status": "active"
+    },
+    {
+      "medication": "Repatha (Evolocumab)",
+      "dosage": null,
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "Oki",
+      "dosage": null,
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "Pantoprazolo",
+      "dosage": "20 mg 1 cp ore 8",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "ASA",
+      "dosage": "100 mg 1 cp ore 12",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "olmesartan/amlodipina",
+      "dosage": "40/10 mg 1 cp ore 20",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "duloxetina",
+      "dosage": "30 mg 1 cp ore 13",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "tamsulosina",
+      "dosage": "0.4 mg 1 cp ore 20",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "mirapexin",
+      "dosage": "1.05 mg 1 cp ore 20",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "Selegilina",
+      "dosage": "10 mg 1 cp ore 8",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "rivaroxaban",
+      "dosage": "2.5 mg 1 cp ore 8 e 1 cp ore 20",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "repatha",
+      "dosage": "140 mg 1 fl ogni 14 gg.",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "empaglifozin",
+      "dosage": "10 mg 1 cp ore 8",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "allopurinolo",
+      "dosage": null,
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "febuxostat",
+      "dosage": null,
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "acido bempedoico",
+      "dosage": null,
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "JARDIANCE 10mg - 28cpr",
+      "dosage": "1 c (11/20/25)",
+      "timing": "8.00",
+      "status": "active"
+    },
+    {
+      "medication": "RIVAROXABAN 2,5mg - 56cpr",
+      "dosage": "1 c (2/6/25)",
+      "timing": "8.00, 19.30",
+      "status": "active"
+    },
+    {
+      "medication": "JUMEX 10mg - 25cpr",
+      "dosage": "1c (1/10/23)",
+      "timing": "8.00",
+      "status": "active"
+    },
+    {
+      "medication": "PANTOPRAZOLO 20mg - 28cpr",
+      "dosage": "1 c (10/5/14)",
+      "timing": "8.00",
+      "status": "active"
+    },
+    {
+      "medication": "CARDIOASPIRIN 100mg - 30cpr GAST",
+      "dosage": "1 c (2/12/08)",
+      "timing": "12.30",
+      "status": "active"
+    },
+    {
+      "medication": "ALIKRES 30mg GASTROR - 30cpr",
+      "dosage": "1 c (12/1/12)",
+      "timing": "12.30",
+      "status": "active"
+    },
+    {
+      "medication": "BIVIS 40mg/10mg - 28cpr riv",
+      "dosage": "1 c (11/14/24)",
+      "timing": "19.30",
+      "status": "active"
+    },
+    {
+      "medication": "MIRAPEXIN 1,05mg - 30cpr",
+      "dosage": "1 c (1/10/23)",
+      "timing": "19.30",
+      "status": "active"
+    },
+    {
+      "medication": "TAMSULOSIN TEVA 0,4mg - 30cpr",
+      "dosage": "1 c (10/25/12)",
+      "timing": "19.30",
+      "status": "active"
+    },
+    {
+      "medication": "REPATHA 140mg - iniezione",
+      "dosage": "1 (7/21/22)",
+      "timing": "Ogni 2 Week",
+      "status": "active"
+    },
+    {
+      "medication": "REPATHA",
+      "dosage": null,
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "REP +FLUV",
+      "dosage": null,
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "FLUVASTATINA",
+      "dosage": "dal 16/12/2014",
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "FLUV",
+      "dosage": null,
+      "timing": null,
+      "status": "active"
+    },
+    {
+      "medication": "CRESTOR",
+      "dosage": "dal 14/02/2010 al 30/04/2013",
+      "timing": null,
+      "status": "inactive"
+    },
+    {
+      "medication": "GEMFIBROZIL",
+      "dosage": "dal 18/06/2014 al 15/12/2014",
+      "timing": null,
+      "status": "inactive"
+    },
+    {
+      "medication": "EZETROL",
+      "dosage": "dal 20/02/2014 al 30/05/2014",
+      "timing": null,
+      "status": "inactive"
+    },
+    {
+      "medication": "ARMOLIPID PLUS",
+      "dosage": "dal 01/05/2013 al 19/02/2014",
+      "timing": null,
+      "status": "inactive"
+    }
+  ],
+  "observations": [
+    {
+      "test_name": "UPDRS parte III",
+      "value": "9",
+      "unit": null,
+      "date": "01/06/2023"
+    },
+    {
+      "test_name": "UPDRS parte III",
+      "value": "5",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Tremore al mattino",
+      "value": "aumento",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Tremore alla marcia",
+      "value": "riemerso",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Tremore alla mano destra",
+      "value": "riemerso",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Cruralgia",
+      "value": "presente",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Edema alle caviglie",
+      "value": "presente",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Stato di diarrea",
+      "value": "tendenzialmente diarroico",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Pendolarismi a destra",
+      "value": "ridotti",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Postura",
+      "value": "cifosi lieve",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "Passo",
+      "value": "simmetrico",
+      "unit": null,
+      "date": "24/09/2025"
+    },
+    {
+      "test_name": "RBD",
+      "value": "presente",
+      "unit": null,
+      "date": "24/09/2025"
+    }
+  ],
+  "conditions": [
+    {
+      "code": {
+        "text": "Malattia di Parkinson"
+      },
+      "onsetDateTime": "2022-11-01",
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Cardiopatia ipertensiva"
+      },
+      "onsetDateTime": "2010-01-01",
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Coronary artery disease (post triple bypass)"
+      },
+      "onsetDateTime": "2014-01-01",
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Aneurisma dell'aorta addominale (post aneurismectomia)"
+      },
+      "onsetDateTime": "2017-01-01",
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Dislipidemia"
+      },
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Disturbo del comportamento in fase REM (RBD)"
+      },
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Cruralgia"
+      },
+      "onsetDateTime": "2025-09-24",
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Edema alle caviglie"
+      },
+      "onsetDateTime": "2025-06-01",
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Diarrea"
+      },
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Ernia discale"
+      },
+      "verificationStatus": "confirmed",
+      "clinicalStatus": "active"
+    },
+    {
+      "code": {
+        "text": "Ipertensione arteriosa"
+      }
+    },
+    {
+      "code": {
+        "text": "Dislipidemia"
+      }
+    },
+    {
+      "code": {
+        "text": "Ex-fumatore (pregresso fumo)"
+      }
+    },
+    {
+      "code": {
+        "text": "Sovrappeso (BMI 28)"
+      }
+    },
+    {
+      "code": {
+        "text": "Parkinson (2023)"
+      }
+    },
+    {
+      "code": {
+        "text": "Ernia lombare"
+      }
+    },
+    {
+      "code": {
+        "text": "Insufficienza renale cronica (IRC)"
+      }
+    },
+    {
+      "code": {
+        "text": "DE (non specificato)"
+      }
+    },
+    {
+      "code": {
+        "text": "Sindrome coronarica cronica"
+      }
+    },
+    {
+      "code": {
+        "text": "Coronaropatia trivasale (malattia coronarica a tre vasi)"
+      }
+    },
+    {
+      "code": {
+        "text": "Polivasculopatia (vasculopatia polidistrettuale)"
+      }
+    },
+    {
+      "code": {
+        "text": "Stenosi carotidea non emodinamicamente significativa (55% dx, 50% sx)"
+      }
+    },
+    {
+      "code": {
+        "text": "Aneurismectomia aorta addominale"
+      }
+    },
+    {
+      "code": {
+        "text": "Bypass aorto-bi-femorale"
+      }
+    },
+    {
+      "code": {
+        "text": "Stenosi carotidea (50-55% destra, 45% sinistra)"
+      }
+    },
+    {
+      "code": {
+        "text": "Steatosi epatica"
+      }
+    },
+    {
+      "code": {
+        "text": "Assottigliamento della corticale renale"
+      }
+    },
+    {
+      "code": {
+        "text": "Riduzione della GFR (GFR 31 ml/min)"
+      }
+    },
+    {
+      "code": {
+        "text": "Iperuricemia (acido urico 9.7 mg/dL)"
+      }
+    },
+    {
+      "code": {
+        "text": "Intolleranza alle statine (rosuvastatina, atorvastatina)"
+      }
+    },
+    {
+      "code": {
+        "text": "Intolleranza a Opltalon"
+      }
+    },
+    {
+      "code": {
+        "text": "Rischio cardiovascolare estremo"
+      }
+    },
+    {
+      "code": {
+        "text": "Dilatazione del bulbo aortico (4.6 cm)"
+      }
+    },
+    {
+      "code": {
+        "text": "Ipertrofia parietale settale"
+      }
+    },
+    {
+      "code": {
+        "text": "Disinesia del setto interventricolare post-chirurgica"
+      }
+    },
+    {
+      "code": {
+        "text": "Ectasia della radice aortica (46 mm)"
+      }
+    },
+    {
+      "code": {
+        "text": "Valvola mitrale fibrotica con lieve insufficienza"
+      }
+    },
+    {
+      "code": {
+        "text": "Valvola aortica con degenerazione sclero-calcifica"
+      }
+    },
+    {
+      "code": {
+        "text": "Insufficienza tricuspidalica lieve"
+      }
+    },
+    {
+      "code": {
+        "text": "Ridotta frazione di eiezione (FE 56% - 61%)"
+      }
+    },
+    {
+      "code": "Diabete mellito di tipo 2",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2025-11-20"
+    },
+    {
+      "code": "Trombosi venosa profonda / Embolia polmonare",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2025-02-06"
+    },
+    {
+      "code": "Malattia di Parkinson",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2023-01-10"
+    },
+    {
+      "code": "Reflusso gastroesofageo",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2014-10-05"
+    },
+    {
+      "code": "Prevenzione secondaria di malattia cardiovascolare",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2008-02-12"
+    },
+    {
+      "code": "Disturbo depressivo maggiore",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2012-12-01"
+    },
+    {
+      "code": "Ipertensione arteriosa",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2024-11-14"
+    },
+    {
+      "code": "Ipertrofia prostatica benigna",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2012-10-25"
+    },
+    {
+      "code": "Ipercolesterolemia",
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed",
+      "onsetDateTime": "2022-07-21"
+    },
+    {
+      "code": {
+        "text": "Anemia da carenza di ferro"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Ipoprotesinemia"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Anisocitosi"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Trombocitopenia lieve"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Ipercolesterolemia"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Ipertrigliceridemia"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "IperLDL"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "HDL basso"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Iperuricemia"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Iperureemia"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Ipercreatininemia"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Iperglicemia"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Pre-diabete (HbA1c elevata)"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "IperCPK"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    },
+    {
+      "code": {
+        "text": "Leggera elevazione ALT"
+      },
+      "clinicalStatus": "active",
+      "verificationStatus": "confirmed"
+    }
+  ]
+}

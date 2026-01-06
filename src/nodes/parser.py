@@ -1,36 +1,28 @@
 import os
+import logging
 from llama_parse import LlamaParse
-from pydantic import BaseModel, Field
-from typing import List
-from dotenv import load_dotenv
+from src.state import ParsedFileContent
 
-load_dotenv()
-
-
-class ParsedFileContent(BaseModel):
-    file_name: str
-    content: str
+logger = logging.getLogger(__name__)
 
 
 async def parse_medical_file(file_path: str) -> ParsedFileContent:
-    """
-    Converts a medical PDF/Excel into Markdown using LlamaParse.
-    Optimized for medical tables and complex layouts.
-    """
     parser = LlamaParse(
-        result_type="markdown",  # Markdown is best for Trustcall/LLM reasoning
-        num_workers=4,  # Faster processing for multi-page docs
-        verbose=True,
-        language="en",
+        result_type="markdown",
+        language="it",
+        use_vendor_multimodal_model=True,
+        vendor_multimodal_model_name="openai-gpt4o",
     )
 
-    print(f"[PARSER] Processing: {file_path}")
-
-    # Simple logic to handle both PDF and Excel via LlamaParse
-    documents = await parser.aload_data(file_path)
-
-    # Combine all pages into one clinical text block
-    full_content = "\n\n".join([doc.text for doc in documents])
+    try:
+        documents = await parser.aload_data(file_path)
+        full_content = "\n\n".join([doc.text for doc in documents])
+        if not full_content.strip():
+            logger.warning(f"File {file_path} parsed but content is empty.")
+    except Exception as e:
+        logger.error(f"Critical Parsing Error for {file_path}: {str(e)}")
+        # Fallback content to allow extraction workers to run/fail gracefully
+        full_content = ""
 
     return ParsedFileContent(
         file_name=os.path.basename(file_path), content=full_content

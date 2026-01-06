@@ -1,0 +1,27 @@
+{
+  "brief_clinical_snapshot": "Paziente maschio di età avanzata con diagnosi di Malattia di Parkinson (2022/2023), cardiopatia ipertensiva, coronaropatia con triple bypass (2014), aneurisma dell’aorta addominale con aneurismectomia (2017), insufficienza renale cronica (GFR 31 ml/min, ipercreatininemia), diabete di tipo 2 (2025) con iperglicemia, dislipidemia con LDL alto, HDL basso e trigliceridi elevati, iperuricemia, anemia da carenza di ferro, depressione maggiore, BPH, ernia discale, edema alle caviglie, diarrea, trombosi venosa profonda/embolia polmonare (2025) e alto rischio cardiovascolare.\n\nStoria recente: aumento del tremore, cruralgia, edema, diarrea, disturbo comportamentale REM (RBD).",
+  "active_medications": [
+    "Empagliflozin (Jumex/JARDIANCE) 10 mg, 1 compressa al mattino (08:00)",
+    "Pantoprazolo 20 mg, 1 compressa al mattino (08:00)",
+    "Rivaroxaban 2,5 mg, 1 compressa al mattino (08:00) e 1 compressa alla sera (19:30)",
+    "Aspirina (Cardiospirin/ASA) 100 mg, 1 compressa a mezzogiorno (12:30)",
+    "Duloxetina (Alikres) 30 mg, 1 compressa al pomeriggio (12:30‑13:00)",
+    "Tamsulosina 0,4 mg, 1 compressa alla sera (19:30)",
+    "Bivis (amlodipina/benazepril) 40/5 mg, 1 compressa alla sera (19:30)",
+    "Pramipexolo (Mirapexin RP) 1,05 mg, 1 compressa alla sera (19:30)",
+    "Evolocumab (Repatha) 140 mg, iniezione subcutanea ogni 2 settimane",
+    "Oki (omeprazolo) – dosaggio non specificato",
+    "Olmesartan/amlodipina 40/10 mg, 1 compressa alla sera (20:00)",
+    "Selegilina 10 mg, 1 compressa al mattino (08:00)",
+    "Allopurinolo – dosaggio non specificato",
+    "Febuxostat – dosaggio non specificato",
+    "Acido bempedoico – dosaggio non specificato",
+    "Fluvastatina – dosaggio non specificato (in terapia dal 16/12/2014)"
+  ],
+  "key_findings": [
+    "Ipercreatininemia con GFR stimato a 31 ml/min (CKD avanzata)",
+    "Iperglicemia con HbA1c elevata (pre‑diabete)",
+    "Ipercolesterolemia con LDL alto, HDL basso e trigliceridi elevati"
+  ],
+  "recent_vitals": {}
+}

@@ -1,112 +1,101 @@
-import json
-from typing import List, Optional, Any, Dict
-from pydantic import create_model, Field
-
+import json, logging
+from typing import Dict, Any
+from src.schemas import FHIRBundle
 from src.utils.llm import get_llm
-from src.schemas import FHIRBundle, MedicationRequest, Observation, Condition
 from trustcall import create_extractor
+
+logger = logging.getLogger(__name__)
 
 
 async def extract_section_worker(
     section_type: str, content: str, file_name: str
 ) -> Dict[str, Any]:
-    """
-    Worker node with robust handling for empty LLM responses.
-    """
+    if not content or len(content.strip()) < 10:
+        return {section_type: []}
+
     llm = get_llm()
-
-    model_map = {
-        "medications": MedicationRequest,
-        "observations": Observation,
-        "conditions": Condition,
-    }
-
-    TargetModel = model_map.get(section_type)
-    if not TargetModel:
-        return {section_type: [], "patient": None}
-
-    # Create model with clear defaults to prevent NoneType errors
-    WorkerSchema = create_model(
-        "WorkerSchema",
-        items=(
-            List[TargetModel],
-            Field(default_factory=list, description=f"List of {section_type}"),
-        ),
-        patient_name=(Optional[str], Field(None, description="Patient name")),
-    )
-
-    structured_llm = llm.with_structured_output(WorkerSchema)
+    structured_llm = llm.with_structured_output(FHIRBundle)
 
     prompt = f"""
-    Extract {section_type} from this Italian medical document.
-    
-    CLINICAL LOGIC:
-    - If section is 'conditions': Extract ONLY diagnoses, chronic diseases, or surgical history (e.g., 'Parkinson', 'Bypass'). 
-      NEVER extract lab results (like 'Leucociti') as conditions.
-    - If section is 'observations': Extract ONLY lab values, vital signs, or clinical findings with results.
-    - If section is 'medications': Extract drug names and dosages.
-    
-    FILE: {file_name}
-    CONTENT:
-    {content}
-    """
+### RUOLO: ARCHITETTO DATI CLINICI
+ESTRAI: {section_type.upper()}
+SORGENTE: {file_name}
+LINGUA: Mantenere i termini medici in ITALIANO.
 
+### ISTRUZIONI PER MATRICI EXCEL (ESAMI SANGUE):
+Il documento contiene una griglia temporale. Procedi come segue:
+1. IDENTIFICA LE COLONNE: Ogni colonna dopo la seconda rappresenta una DATA (es. 04/11/25, 24/04/25).
+2. IDENTIFICA LE RIGHE: Ogni riga rappresenta un PARAMETRO (es. Creatinina, Emoglobina).
+3. MAPPA LE CELLE: Per ogni incrocio [Riga x Colonna] che contiene un numero o un valore:
+   - Crea un oggetto Observation.
+   - test_name = Nome del parametro in riga.
+   - value = Valore nella cella.
+   - date = Data nell'intestazione di colonna.
+   - unit = Unità di misura trovata nella colonna 'UM' o vicino al test.
+4. RISULTATO: Devi produrre una lista piatta di tutte le osservazioni trovate. NON saltare le date storiche.
+
+### ISTRUZIONI PER FARMACI:
+- Se trovi tabelle con 'Dose' e 'Data Inizio', uniscile nel campo dosage.
+- Mantieni lo status 'active' a meno che non sia specificata una data di fine.
+
+### CONTENUTO DA ANALIZZARE:
+{content}
+"""
     try:
+        # We increase the reasoning effort via the LLM config if possible
         res = await structured_llm.ainvoke(prompt)
-
-        # SAFETY CHECK: If LLM returns None or structured_output fails
-        if res is None:
-            return {section_type: [], "patient": None}
-
-        return {
-            section_type: (
-                [item.model_dump() for item in res.items] if res.items else []
-            ),
-            "patient": (
-                {"name": res.patient_name}
-                if res.patient_name and "John" not in res.patient_name
-                else None
-            ),
-        }
+        return (
+            res.model_dump()
+            if res
+            else {
+                "patient": {},
+                "medications": [],
+                "observations": [],
+                "conditions": [],
+            }
+        )
     except Exception as e:
-        # This catches the 'NoneType' error you saw
-        print(f"[EXTRACTOR ERROR] {section_type} in {file_name}: {e}")
-        return {section_type: [], "patient": None}
+        logger.error(f"Validation failure in {file_name}: {e}")
+        # Return empty structure instead of crashing
+        return {"patient": {}, "medications": [], "observations": [], "conditions": []}
 
 
-async def final_trustcall_merger(fragments: list):
+async def final_trustcall_merger(fragments: list) -> Dict[str, Any]:
     llm = get_llm()
     extractor = create_extractor(
         llm, tools=[FHIRBundle], tool_choice="FHIRBundle", enable_inserts=True
     )
 
-    master_dict = {}
-    valid_frags = [
-        f for f in fragments if any(v for k, v in f.items() if k != "patient" and v)
-    ]
+    master_record = FHIRBundle().model_dump()
 
-    for frag in valid_frags:
+    for frag in fragments:
+        if not frag:
+            continue
+
         try:
+            # Attempt AI-driven merge
             res = await extractor.ainvoke(
                 {
                     "messages": [
                         {
-                            "role": "system",
-                            "content": "Update the 'FHIRBundle' tool. Do NOT create keys like 'bundle_1' or 'fhir_bundle_1'. Use the existing 'FHIRBundle' structure.",
-                        },
-                        {
                             "role": "user",
-                            "content": f"Integrate this data: {json.dumps(frag)}",
-                        },
+                            "content": f"Unisci questi dati al record master: {json.dumps(frag)}",
+                        }
                     ],
-                    # This key MUST match the class name 'FHIRBundle'
-                    "existing": {"FHIRBundle": master_dict} if master_dict else None,
+                    "existing": {"FHIRBundle": master_record},
                 }
             )
             if res.get("responses"):
-                master_dict = res["responses"][0].model_dump()
+                master_record = res["responses"][0].model_dump()
+            else:
+                raise ValueError("No response from Trustcall")
         except Exception as e:
-            print(f"[MERGER ERROR]: {e}")
-            continue
+            logger.warning(f"Trustcall merge failed, using manual fallback: {e}")
+            # MANUAL FALLBACK: Append lists to prevent data loss
+            for key in ["medications", "observations", "conditions"]:
+                if key in frag and isinstance(frag[key], list):
+                    master_record[key].extend(frag[key])
+            if frag.get("patient") and not master_record["patient"].get("name"):
+                master_record["patient"].update(frag["patient"])
 
-    return FHIRBundle(**master_dict) if master_dict else FHIRBundle()
+    return master_record

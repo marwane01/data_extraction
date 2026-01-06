@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "patient_file_processor": "./src/patient_file_processor_graph.py:graph"
+    },
+    "env": ".env"
+}
