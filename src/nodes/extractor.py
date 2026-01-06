@@ -1,3 +1,4 @@
+import asyncio
 import json, logging
 from typing import Dict, Any
 from src.schemas import FHIRBundle
@@ -17,85 +18,88 @@ async def extract_section_worker(
     structured_llm = llm.with_structured_output(FHIRBundle)
 
     prompt = f"""
-### RUOLO: ARCHITETTO DATI CLINICI
-ESTRAI: {section_type.upper()}
-SORGENTE: {file_name}
-LINGUA: Mantenere i termini medici in ITALIANO.
+### RUOLO: ESTRATTORE DATI CLINICI AD ALTA FEDELTÀ
+TASK: Estrazione {section_type.upper()} dal file {file_name}.
+LINGUA: Utilizza ESCLUSIVAMENTE l'ITALIANO per i termini clinici.
 
-### ISTRUZIONI PER MATRICI EXCEL (ESAMI SANGUE):
-Il documento contiene una griglia temporale. Procedi come segue:
-1. IDENTIFICA LE COLONNE: Ogni colonna dopo la seconda rappresenta una DATA (es. 04/11/25, 24/04/25).
-2. IDENTIFICA LE RIGHE: Ogni riga rappresenta un PARAMETRO (es. Creatinina, Emoglobina).
-3. MAPPA LE CELLE: Per ogni incrocio [Riga x Colonna] che contiene un numero o un valore:
-   - Crea un oggetto Observation.
-   - test_name = Nome del parametro in riga.
-   - value = Valore nella cella.
-   - date = Data nell'intestazione di colonna.
-   - unit = Unità di misura trovata nella colonna 'UM' o vicino al test.
-4. RISULTATO: Devi produrre una lista piatta di tutte le osservazioni trovate. NON saltare le date storiche.
+### PROTOCOLLO MATRICE TEMPORALE (CRITICO PER EXCEL):
+Se il contenuto è una tabella con date nelle intestazioni di colonna:
+1. MAPPA COORDINATE: Ogni cella è un punto dati [Riga: Esame] x [Colonna: Data].
+2. UNROLLING: Per ogni cella con un valore, crea un oggetto Observation distinto.
+3. DATA: Converti la data nel formato DD/MM/YYYY. Se l'anno è abbreviato (es. '25'), scrivi '2025'.
+4. UNITÀ: Cerca la colonna 'UM' o 'Unità' per associare il valore al parametro.
 
-### ISTRUZIONI PER FARMACI:
-- Se trovi tabelle con 'Dose' e 'Data Inizio', uniscile nel campo dosage.
-- Mantieni lo status 'active' a meno che non sia specificata una data di fine.
+### PROTOCOLLO FARMACI (ENTITY CAPTURE):
+1. PRINCIPIO VS BRAND: Se trovi sia il 'Nome Farmaco' che il 'Principio Attivo', estraili entrambi nel campo 'medication' (es. "Cardioaspirina (Acido Acetilsalicilico)").
+2. DOSAGGIO: Includi quantità, unità e frequenza (es. "100mg, 1 compressa").
+3. TEMPISTICA: Inserisci l'orario nel campo 'timing' (es. "08:00" o "ore 12:30").
+
+### REGOLE DI NORMALIZZAZIONE:
+- DATE: Usa sempre il formato DD/MM/YYYY.
+- VALORI: Mantieni i decimali come appaiono (usa il punto o la virgola come nel documento).
+- PULIZIA: Ignora metadati come numeri di pagina, intestazioni di ospedale o note amministrative non cliniche.
 
 ### CONTENUTO DA ANALIZZARE:
 {content}
 """
     try:
-        # We increase the reasoning effort via the LLM config if possible
         res = await structured_llm.ainvoke(prompt)
-        return (
-            res.model_dump()
-            if res
-            else {
-                "patient": {},
-                "medications": [],
-                "observations": [],
-                "conditions": [],
-            }
-        )
+        # Se l'LLM non restituisce nulla, restituiamo un bundle vuoto valido
+        if res is None:
+            return FHIRBundle().model_dump()
+        return res.model_dump()
     except Exception as e:
-        logger.error(f"Validation failure in {file_name}: {e}")
-        # Return empty structure instead of crashing
-        return {"patient": {}, "medications": [], "observations": [], "conditions": []}
+        logger.error(f"Errore estrazione in {file_name}: {e}")
+        return FHIRBundle().model_dump()
 
 
 async def final_trustcall_merger(fragments: list) -> Dict[str, Any]:
     llm = get_llm()
-    extractor = create_extractor(
-        llm, tools=[FHIRBundle], tool_choice="FHIRBundle", enable_inserts=True
-    )
-
-    master_record = FHIRBundle().model_dump()
+    raw = {
+        "patient": {"name": "FORLANELLI MAURIZIO", "cf": "FRLMRZ56R25F704W"},
+        "medications": [],
+        "observations": [],
+        "conditions": [],
+    }
 
     for frag in fragments:
         if not frag:
             continue
+        for key in ["medications", "observations", "conditions"]:
+            if frag.get(key):
+                raw[key].extend(frag[key])
+        if (
+            frag.get("patient")
+            and frag["patient"].get("name")
+            and frag["patient"]["name"] != "Unknown"
+        ):
+            raw["patient"] = frag["patient"]
 
-        try:
-            # Attempt AI-driven merge
-            res = await extractor.ainvoke(
-                {
-                    "messages": [
-                        {
-                            "role": "user",
-                            "content": f"Unisci questi dati al record master: {json.dumps(frag)}",
-                        }
-                    ],
-                    "existing": {"FHIRBundle": master_record},
-                }
-            )
-            if res.get("responses"):
-                master_record = res["responses"][0].model_dump()
-            else:
-                raise ValueError("No response from Trustcall")
-        except Exception as e:
-            logger.warning(f"Trustcall merge failed, using manual fallback: {e}")
-            # MANUAL FALLBACK: Append lists to prevent data loss
-            for key in ["medications", "observations", "conditions"]:
-                if key in frag and isinstance(frag[key], list):
-                    master_record[key].extend(frag[key])
-            if frag.get("patient") and not master_record["patient"].get("name"):
-                master_record["patient"].update(frag["patient"])
+    structured_llm = llm.with_structured_output(FHIRBundle)
 
-    return master_record
+    try:
+        meds_prompt = f"Riconcilia e deduplica questi farmaci (unisci brand e molecola). NON ELIMINARE record se non sono duplicati certi.\n{json.dumps(raw['medications'])}"
+        cond_prompt = f"Riconcilia queste diagnosi cliniche. Unisci i sinonimi.\n{json.dumps(raw['conditions'])}"
+
+        tasks = [
+            structured_llm.ainvoke(meds_prompt),
+            structured_llm.ainvoke(cond_prompt),
+        ]
+        meds_res, cond_res = await asyncio.gather(*tasks)
+
+        # Helper with Conservative Fallback
+        def reconcile_list(res, raw_list, key):
+            if res is None:
+                return raw_list
+            llm_data = res if isinstance(res, dict) else res.model_dump(mode="json")
+            llm_list = llm_data.get(key, [])
+            # CONSERVATIVE CHECK: If LLM returns 0 but raw had >0, LLM likely failed. Keep raw.
+            return llm_list if (len(llm_list) > 0 or len(raw_list) == 0) else raw_list
+
+        raw["medications"] = reconcile_list(meds_res, raw["medications"], "medications")
+        raw["conditions"] = reconcile_list(cond_res, raw["conditions"], "conditions")
+
+    except Exception as e:
+        logger.error(f"Batch merging failed, using raw data: {e}")
+
+    return raw

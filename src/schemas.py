@@ -40,7 +40,48 @@ class MedicationRequest(BaseModel):
 
 
 class FHIRBundle(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    # Usiamo default_factory per garantire che siano sempre liste, mai None
     patient: Optional[Patient] = Field(default_factory=Patient)
     medications: List[MedicationRequest] = Field(default_factory=list)
     observations: List[Observation] = Field(default_factory=list)
     conditions: List[Any] = Field(default_factory=list)
+
+    # Validatore per trasformare eventuali None in liste vuote
+    @field_validator("medications", "observations", "conditions", mode="before")
+    @classmethod
+    def ensure_list(cls, v: Any) -> List:
+        return v if isinstance(v, list) else []
+
+
+class SummarySchema(BaseModel):
+    brief_clinical_snapshot: str = Field(
+        ..., description="Sintesi dello stato di salute."
+    )
+    active_medications: List[str] = Field(default_factory=list)
+    key_findings: List[str] = Field(default_factory=list)
+    recent_vitals: Dict[str, str] = Field(
+        default_factory=dict,
+        description="Parametri vitali recenti (es. Creatinina: 1.5 mg/dL)",
+    )
+
+    @field_validator("recent_vitals", mode="before")
+    @classmethod
+    def stringify_vitals(cls, v: Any) -> Dict[str, str]:
+        """Intercepts LLM objects and flattens them into strings to prevent crashes."""
+        if not isinstance(v, dict):
+            return {}
+        flattened = {}
+        for key, val in v.items():
+            if isinstance(val, dict):
+                # Handles cases like: "creatinina": {"value": 1.5, "unit": "mg/dL", "date": "2025-11-20"}
+                value = val.get("value", val.get("risultato", ""))
+                unit = val.get("unit", val.get("u_m", ""))
+                date = val.get("date", "")
+                entry = f"{value} {unit}".strip()
+                if date:
+                    entry += f" ({date})"
+                flattened[key] = entry
+            else:
+                flattened[key] = str(val)
+        return flattened

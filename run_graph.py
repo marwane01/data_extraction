@@ -20,7 +20,16 @@ async def run():
     patient_name = (
         final_state.get("master_bundle", {}).get("patient", {}).get("name", "Unknown")
     )
+    patient_obj = final_state.get("master_bundle", {}).get("patient")
+    name = "Unknown"
+    if isinstance(patient_obj, dict):
+        name = patient_obj.get("name", "Unknown")
+    elif hasattr(patient_obj, "name"):
+        name = patient_obj.name
 
+    print(
+        f"\n🏁 DONE!\nPatient: {name}\nFiles generated: master_record.json, summary_snapshot.json"
+    )
     print(f"\n🏁 PIPELINE COMPLETE")
     print(f"Patient Identifed: {patient_name}")
     print(f"Generated: master_record.json (FHIR) & summary_snapshot.json (Summary)")
